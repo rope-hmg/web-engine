@@ -1,0 +1,83 @@
+edition = "2021"
+
+error_on_line_overflow        = false
+error_on_unformatted          = false
+hide_parse_errors             = true
+print_misformatted_file_names = true
+report_fixm                   = true
+report_todo                   = true
+
+binop_separator = "Front"
+
+# Sometimes it's nice to be able to separate code a bit
+blank_lines_lower_bound = 0
+blank_lines_upper_bound = 2
+
+# The default is SameLineWhere because that is the prefered Rust style, but I've
+# always liked to have braces on the next line. It's actually easier to read because
+# you can see which items are in an indent level and it spaces items out a bit more.
+# brace_style = "SameLineWhere"
+brace_style         = "AlwaysNextLine"
+control_brace_style = "AlwaysNextLine"
+indent_style        = "Block"
+
+combine_control_expr = false
+
+# Line length rules are kind of silly, but these seem like reasonable values.
+wrap_comments = true
+comment_width = 100
+max_width     = 120
+
+condense_wildcard_suffixes = true
+empty_item_single_line     = true
+
+# If the name you've picked is too long for this pick a better name.
+enum_discrim_align_threshold = 25
+struct_field_align_threshold = 25
+struct_lit_single_line       = true
+
+fn_args_layout = "Tall"
+fn_single_line = false
+
+force_explicit_abi     = true
+force_multiline_blocks = true
+
+format_code_in_doc_comments = true
+format_macro_matchers       = true
+format_macro_bodies         = true
+format_strings              = true
+
+hard_tabs = false
+tab_spaces = 4
+
+imports_indent      = "Visual"
+imports_layout      = "Mixed"
+imports_granularity = "Crate"
+reorder_imports     = true
+group_imports       = "StdExternalCrate"
+
+inline_attribute_width = 0
+
+match_arm_blocks           = true
+match_arm_leading_pipes    = "Never"
+match_block_trailing_comma = true
+
+merge_derives            = false
+normalize_comments       = true
+normalize_doc_attributes = true
+
+overflow_delimited_expr = true
+remove_nested_parens    = true
+reorder_impl_items      = true
+reorder_modules         = true
+
+space_after_colon        = true
+space_before_colon       = false
+spaces_around_ranges     = false
+trailing_comma           = "Vertical"
+trailing_semicolon       = true
+type_punctuation_density = "Wide"
+unstable_features        = true
+
+use_field_init_shorthand = false
+use_try_shorthand        = false

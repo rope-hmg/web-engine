@@ -1,0 +1,11 @@
+cargo-features = ["edition2021"]
+
+[workspace]
+members = [
+    "bin/*",
+    "lib/*",
+]
+
+[profile.release]
+codegen-units = 1
+lto           = true
